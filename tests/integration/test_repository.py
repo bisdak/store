@@ -1,6 +1,6 @@
 from sqlalchemy import text
-from domain import model
-from adapters import repository
+from allocation.domain import model
+from allocation.adapters import repository
 
 def test_repository_can_save_a_batch(session):
     batch = model.Batch("batch1", "BLUE-BOX", 100, eta=None)    
