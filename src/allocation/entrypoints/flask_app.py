@@ -11,9 +11,8 @@ from allocation.adapters import orm
 from allocation.service_layer import services, unit_of_work
 
 app = Flask(__name__)
-
-
 orm.start_mappers()
+
 
 @app.route("/add_batch", methods=["POST"])
 def add_batch():
